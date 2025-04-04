@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="option-container">
+    <div class="option-card" onclick="window.location.href='/image'">
+        <div class="option-content">
+            📷 Image Detection
+            <p class="option-subtext">Upload an image to detect emotions</p>
+        </div>
+    </div>
+    
+    <div class="option-card" onclick="window.location.href='/live'">
+        <div class="option-content">
+            🎥 Real-time Detection
+            <p class="option-subtext">Use webcam for live emotion analysis</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
